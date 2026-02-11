@@ -97,6 +97,18 @@ export const loadModels = async (): Promise<{
       type: 'text',
       is_stream_supported: false,
     },
+    {
+      id: 'claude-opus-4.6',
+      context_length: 200000,
+      pricing: {
+        prompt: '0.000015',
+        completion: '0.000075',
+        image: '0.024',
+        request: '0',
+      },
+      type: 'text',
+      is_stream_supported: true,
+    },
   ];
 
   specificModels.forEach((model) => {
